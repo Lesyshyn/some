@@ -1,0 +1,31 @@
+header {
+	min-height: 40vh;
+	text-align: center;
+}
+.header1 {
+	background: darkred;
+	color: #FFF;
+}
+.header2 {
+	background: darkgreen;
+	color: purple;
+}
+.header3 {
+	background: darkblue;
+	color: #fff;
+}
+.column1 {
+	color: #fff;
+	background:purple;
+	min-height: 60vh;
+}
+.column2 {
+	color: purple;
+	background:yellow;
+	min-height: 60vh;
+}
+.column3 {
+	color: red;
+	background:darkgrey;
+	min-height: 60vh;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-route.min.js"></script>
+</head>
+<body ng-controller="myCtrl as ctrl">
+    <header class="{{ctrl.h.header}} d-flex align-items-center">
+        <div class="container">
+            <h1 class="display-1">My Angular Page</h1>
+            <p class="display-4 font-italic">You can change style!</p>
+            <button type="button" class="btn btn-warning active" ng-click ="ctrl.f1()">Style 1</button>
+            <button type="button" class="btn btn-danger" ng-click = "ctrl.f2()">Style 1</button>
+            <button type="button" class="btn btn-primary" ng-click = "ctrl.f3()">Style 1</button>
+        </div>
+    </header>
+    <main>
+        <div class="container-fluid p-0">
+            <div class="row no-gutters">
+                <div class="col-4">
+                    <div class="{{ctrl.col.column}} d-flex justify-content-center align-items-center">
+                        <h2>Column 1</h2>
+
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="{{ctrl.col.column}} bg-primary d-flex justify-content-center align-items-center">
+                        <h2>Column 2</h2>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="{{ctrl.col.column}} d-flex justify-content-center align-items-center">
+                        <h2>Column 3</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
